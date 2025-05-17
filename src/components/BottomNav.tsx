@@ -3,17 +3,23 @@ import React from 'react';
 import { Grid, Coffee, ShoppingCart } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const BottomNav = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const currentPath = location.pathname;
+  const isMobile = useIsMobile();
 
   const isActive = (path: string) => currentPath === path;
 
   const navigateTo = (path: string) => {
     navigate(path);
   };
+
+  if (!isMobile) {
+    return null; // Don't render bottom navigation on desktop
+  }
 
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white py-2 border-t z-10">
