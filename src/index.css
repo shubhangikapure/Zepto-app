@@ -1,0 +1,67 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 270 67% 47%; /* Zepto purple */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 270 67% 47%; /* Zepto purple */
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .category-card {
+    @apply flex flex-col items-center justify-center px-3 py-4 cursor-pointer bg-white rounded-lg shadow-sm transition-all hover:shadow-md;
+  }
+  
+  .product-card {
+    @apply bg-white rounded-lg overflow-hidden shadow-sm transition-all hover:shadow-md p-3;
+  }
+  
+  /* Custom zepto styles */
+  .zepto-top-tabs [data-state="active"] {
+    @apply bg-pink-500 text-white;
+  }
+  
+  .zepto-top-tabs [data-state="inactive"] {
+    @apply bg-white text-pink-500;
+  }
+}
