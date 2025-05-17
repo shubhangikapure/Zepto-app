@@ -23,7 +23,7 @@ const Cart = () => {
       name: "Chole & Rice",
       price: 189,
       quantity: 2,
-      image: "https://images.unsplash.com/photo-1689169202078-f8562513fb54?q=80&w=300",
+      image: "https://naturestfood.com/product/chole-masala-rice/",
       servingInfo: "Serves 1"
     },
     {

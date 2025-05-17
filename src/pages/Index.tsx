@@ -68,11 +68,7 @@ const Index = () => {
             </Button>
           </div>
           <div className="hidden md:block md:w-1/3">
-            <img 
-              src="/lovable-uploads/e89205e2-034e-400c-9635-d5d535fba3b6.png"
-              alt="Zepto Delivery"
-              className="rounded-lg"
-            />
+            
           </div>
         </div>
 

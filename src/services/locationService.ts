@@ -12,15 +12,15 @@ interface UserLocation {
 // Saved locations
 const savedLocations: UserLocation[] = [
   {
-    address: "Tapodham Road, Tapodham, Varanasi",
+    address: "Karve Nager ,Pune  ",
     coordinates: { latitude: 25.3176, longitude: 82.9739 }
   },
   {
-    address: "Civil Lines, Prayagraj",
+    address: "Civil Lines, Pune",
     coordinates: { latitude: 25.4358, longitude: 81.8463 }
   },
   {
-    address: "Gomti Nagar, Lucknow",
+    address: "Gomti Nagar, Pune",
     coordinates: { latitude: 26.8467, longitude: 80.9462 }
   }
 ];

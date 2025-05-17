@@ -35,7 +35,7 @@ const ProductCarousel: React.FC = () => {
       price: 189,
       originalPrice: 389,
       discount: 51,
-      image: "https://images.unsplash.com/photo-1689169202078-f8562513fb54?q=80&w=300",
+      image: "https://naturestfood.com/product/chole-masala-rice/",
       deliveryTime: "14 Mins",
       servingInfo: "Serves 1"
     },
